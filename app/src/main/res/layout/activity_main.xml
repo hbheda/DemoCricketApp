@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_ind_vs_nz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IND vs NZ"
+            android:textSize="16sp"
+            android:layout_marginEnd="@dimen/dimen_16" />
+
+        <Button
+            android:id="@+id/btn_sa_vs_pk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SA vs PK"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello World!"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_match" />
+
+    <TextView
+        android:id="@+id/txt_match_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello World!"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@id/txt_match"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_match_venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello World!"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@id/txt_match_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_player_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Details"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@id/txt_match_venue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
